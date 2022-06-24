@@ -4,31 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DocumentFirst JavaScript Task</title>
+    <title>Simple Calculator using JavaScript</title>
 </head>
 <body>
-     <h1>My biodata </h1>
+     <h1>Javascript Calculator </h1>
      <script>
-        const operator = prompt('Enter operator/operation (either +, -, *, /)');
+        const operator = prompt('Enter (either +, -, *, /) operator/operation');
 
-        const num1 = parseFloat(prompt('Enter first number'));
+        const num1 = parseFloat(prompt('Enter the first number'));
         const num2 = parseFloat(prompt('Enter the second number'));
 
-        let result;
+        let res;
 
+         //using if control flow
         if(operator == '+'){
-            result = num1 + num2;
+            res = num1 + num2;
         }
         else if(operator == '-'){
-            result = num1 - num2;
+            res = num1 - num2;
         }
         else if (operator == '*'){
-            result = num1*num2;
+            res = num1*num2;
         }
         else
-        result = num1/num2;
+        res= num1/num2;
 
-        console.log('${num1} ${operator} ${num2} = ${result}');\|.<":}|"
+        console.log('${num1} ${operator} ${num2} = ${res}');
      </script>
 </body>
 </html>
